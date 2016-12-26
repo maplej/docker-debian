@@ -18,7 +18,7 @@ RUN mkdir /var/run/sshd && \
 
 # supervisord
 RUN mkdir -p /var/log/supervisor && \
-    mkdir -p etc/supervisor/conf.d
+    mkdir -p /etc/supervisor/conf.d
 COPY supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 COPY supervisor-conf.d/* /etc/supervisor/conf.d/
 
